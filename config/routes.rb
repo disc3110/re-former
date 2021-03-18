@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
-  root "users"
+
+
+  get 'home/index'
+  get 'users/new'
 
   resources :users, only: [:create, :new]
 end
